@@ -56,17 +56,17 @@ $app->user->remark($openId, "僵尸粉");
 ## 拉黑用户
 
 ```php
-$app->user->block('openidxxxxx');
+$app->user->black('openidxxxxx');
 // 或者多个用户
-$app->user->block(['openid1', 'openid2', 'openid3', ...]);
+$app->user->black(['openid1', 'openid2', 'openid3', ...]);
 ```
 
 ## 取消拉黑用户
 
 ```php
-$app->user->unblock('openidxxxxx');
+$app->user->unblack('openidxxxxx');
 // 或者多个用户
-$app->user->unblock(['openid1', 'openid2', 'openid3', ...]);
+$app->user->unblack(['openid1', 'openid2', 'openid3', ...]);
 ```
 
 ## 获取黑名单
